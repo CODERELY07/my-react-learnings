@@ -1,0 +1,35 @@
+//Create react for beginner
+
+1. Open cmd and type:
+  npm create vite@4.1.0
+  y
+Project name:  
+react-app
+
+Select a framework:
+React
+
+Select a variant:
+javascript
+
+2. Install React
+cd react-app
+npm i
+
+3. Open In vscode
+code .
+
+4. Run the code
+goto terminal write:
+npm run dev
+h
+o
+
+
+5. INstall Bootrap
+npm i bootstrap@5.2.3
+
+import bootrap in the main.tsx
+import 'bootstrap/dist/css/bootstrap.css'
+
+6. Create Components right click src then create folder name componetns then add listGroup.tsx file then try to put bootstrap.

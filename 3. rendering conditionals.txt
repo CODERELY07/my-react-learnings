@@ -1,0 +1,66 @@
+function ListGroup() {
+  const items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
+  const message = items.length === 0 ? <p>NO item found</p> : null;
+  return (
+    <>
+      <h1>List</h1>
+      {message}
+      <ul className="list-group">
+        {items.map((item) => (
+          <li className="list-group-item" key={item}>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+export default ListGroup;
+
+//we can also use function so we can dynamically output messages with parameters
+function ListGroup() {
+    const items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
+    const message  = ()=>  items.length === 0 ? <p>NO item found</p> : null;
+    return (
+      <>
+        <h1>List</h1>
+        {message}
+        <ul className="list-group">
+          {items.map((item) => (
+            <li className="list-group-item" key={item}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </>
+    );
+  }
+  
+  export default ListGroup;
+
+//What an expert does
+function ListGroup() {
+    const items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
+ 
+   
+    return (
+      <>
+        <h1>List</h1>
+        {/* //in this we delete the null or the else 
+        //how does this work
+        //ewhen the condition is true the output will be true and when it falsse the output will  be the 
+        //content or text after the question mark. */}
+        {items.length == 0 && <p>No Item found</p>}
+        <ul className="list-group">
+          {items.map((item) => (
+            <li className="list-group-item" key={item}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </>
+    );
+  }
+  
+  export default ListGroup;

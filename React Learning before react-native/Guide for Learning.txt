@@ -1,0 +1,16 @@
+1.go to app.tsx to learn about components and jsx 
+find the comments next is open exportImport.jsx to 
+learn about how to import and export 
+
+You can check this link: https://youtu.be/JtB_tippTUQ?si=Dcwq12fHe-Rvq2lP
+
+
+2. Learn Props and State
+What is props?
+props is read-only properties that are shared between componetents
+A parent component can send data to a child componetnt
+<Component key=value/>
+
+Now go to Student.jsx 
+
+
