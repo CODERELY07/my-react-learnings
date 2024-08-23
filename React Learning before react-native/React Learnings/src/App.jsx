@@ -3,8 +3,10 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 //import exportImport function
+import MyComponent from "./myComponent.jsx";
 import ExportImport from "./exportImport";
 import Student from "./Student";
+import Counter from "./Counter.jsx";
 
 function App() {
   return (
@@ -17,25 +19,37 @@ function App() {
       <SearchUser />
       <Info />
       <SearchUser />
-      <ExportImport/>
-
+      <ExportImport />
       <h2>Props and State</h2>
       {/* //with Props
       //change data type of of the props to see the function of propTypes then check the console */}
-      <Student name="Markey" age={45} isStudent = {false}/>
+      <Student name="Markey" age={45} isStudent={false} />
       {/* //multiple componets */}
-      <Student name="Dave" age={17} isStudent = {true}/>
-
-     {/* will appear the default props */}
-      <Student age={12}/>
-      <Student name="Mark"/>
+      <Student name="Dave" age={17} isStudent={true} />
+      {/* will appear the default props */}
+      <Student age={12} />
+      <Student name="Mark" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2>States</h2>
+      <MyComponent />
+      <br />
+      <br />
+      <br />
+      <br /> <br />
+      <br />
+      <br />
+      <br />
+      <Counter />
     </div>
   );
 }
 
 //this is how to create compontents
 function Info() {
-  //jsx sentax 
+  //jsx sentax
   const title = "React";
   const showTitle = true;
   return (
@@ -58,4 +72,3 @@ function SearchUser() {
 export default App;
 
 //goto exportImport.jsx for export
-

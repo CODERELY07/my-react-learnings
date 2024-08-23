@@ -1,0 +1,4 @@
+1. Component Naming Convention
+React components should start with an uppercase letter. Your component myComponent 
+is not following this convention. It should be MyComponent. React relies on this naming convention 
+to distinguish between HTML tags and components. Change the filename and the component name:
